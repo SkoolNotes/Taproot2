@@ -40,8 +40,11 @@ const PageRenderer = () => {
         //console.log((matter(require(`../../KBBackup3/${course}/${note}.md`).default)).content)
 
         return (<>
-            <span className="sticky block shadow-lg font-bold p-4 text-red-500 text-xl top-0 bg-gray-100 z-40">Taproot</span>
+            <span className="sticky block shadow-lg font-bold p-4 text-red-500 text-xl top-0 bg-gray-100 z-40">Taproot <span style={{float: "right", fontWeight: 500}}>{theFile.data.title}</span></span>
             <div className="content">
+                <div className="datarow">
+                    <span className="datarow-author">{theFile.data.author}</span> | <span className="datarow-course">{theFile.data.course}</span>
+                </div>
                 <ReactMarkdown plugins={[gfm, math]} children={theFile.content} renderers={renderers}/>
             </div>
         </>)

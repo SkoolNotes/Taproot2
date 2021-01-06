@@ -11,8 +11,22 @@
     padding-bottom: 50px;
 }
 
+.datarow  {
+    margin-top: 30px;
+    font-weight: 500;
+    color: red;
+}
+
+.datarow-course {
+    font-weight: 300;
+}
+
+.datarow-author {
+    font-weight: 600;
+}
+
 h1 {
-    @apply font-bold text-4xl mb-5 text-white p-2 bg-red-500 mt-10 inline-block rounded
+    @apply font-bold text-4xl mb-2 mt-3 text-white p-2 bg-red-500 inline-block rounded
 }
 
 h2 {
@@ -63,5 +77,7 @@ ol ol {
 ol {
   list-style: lower-alpha inside;
 }
+
+
 
 
