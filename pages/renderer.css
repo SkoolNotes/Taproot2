@@ -4,6 +4,10 @@
 }
 /* Optional: show position indicator in red */
 
+body {
+    @apply bg-white dark:bg-gray-darkest text-black dark:text-gray-300
+}
+
 
 .content {
     width: min(95vw, 1200px);
@@ -32,24 +36,24 @@
 }
 
 h1 {
-    @apply font-bold text-4xl mb-2 mt-3 text-white p-2 bg-red-500 inline-block rounded
+    @apply font-bold text-4xl mb-4 mt-5 text-white p-2 bg-red-500 inline-block rounded
 }
 
 h2 {
-    @apply font-bold text-2xl mb-0.5 text-red-500 pb-1 mt-5
+    @apply font-bold text-2xl mb-0.5 text-red-500 pb-1
 }
 
 h3 {
-    @apply text-xl mb-0.5 text-red-500 pb-1 mt-4
+    @apply text-xl mb-0.5 text-red-500 pb-0.5
 }
 
 
 h4 {
-    @apply text-lg mb-0.5 text-red-500 pb-1 mt-4
+    @apply text-lg mb-0.5 text-red-500 pb-0.5 
 }
 
 p {
-    @apply mb-2
+    @apply mb-3
 }
 
 li p {
@@ -62,6 +66,10 @@ img {
 
 ul {
   list-style: none inside;
+  margin-bottom: 10px;
+}
+
+table {
   margin-bottom: 10px;
 }
 
@@ -84,6 +92,9 @@ ol {
   list-style: lower-alpha inside;
 }
 
+hr {
+    @apply my-5 border-gray-light dark:border-gray-lightdark
+}
 
 
 
