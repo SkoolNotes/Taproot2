@@ -25,6 +25,12 @@
     font-weight: 600;
 }
 
+.datarow-back {
+    margin-left: 20px;
+    font-weight: 400;
+    display: inline-block;
+}
+
 h1 {
     @apply font-bold text-4xl mb-2 mt-3 text-white p-2 bg-red-500 inline-block rounded
 }
