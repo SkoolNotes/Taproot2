@@ -5,7 +5,7 @@
 /* Optional: show position indicator in red */
 
 body {
-    @apply bg-white dark:bg-gray-darkest text-black dark:text-gray-300
+    @apply bg-white text-black 
 }
 
 
@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-    @apply font-bold text-2xl mb-3 text-red-500 pb-1
+    @apply font-bold text-2xl mb-3 text-red-500 pb-1 pt-2
 }
 
 h3 {
@@ -93,8 +93,11 @@ ol {
 }
 
 hr {
-    @apply my-5 border-gray-light dark:border-gray-lightdark
+    @apply my-5 border-gray-light 
 }
 
+a :not(wikilink)  {
+    @apply text-red-600 underline hover:text-red-400 transition-all
+}
 
 
