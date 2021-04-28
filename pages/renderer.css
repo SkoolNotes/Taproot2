@@ -4,7 +4,13 @@
 }
 /* Optional: show position indicator in red */
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
+    overflow: scroll;
     @apply bg-white text-black 
 }
 
@@ -106,6 +112,10 @@ hr {
 
 a :not(.wikilink)  {
     @apply text-red-600 underline hover:text-red-400 transition-all
+}
+
+.master-index {
+    @apply inline-flex flex-col justify-center h-10 p-3 font-semibold text-red-500 align-middle border border-red-500 cursor-pointer rounded-md hover:text-white  hover:bg-red-500 hover:border-red-400 transition-all mb-2 mr-2
 }
 
 
