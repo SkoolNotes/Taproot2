@@ -6,11 +6,11 @@ const gfm = require('remark-gfm')
 export default function Home() {
   return (
       <>
-          <div className="h-full m-10">
+          <div className="h-full m-5">
               <div className="mt-5 content">
 
                   <h1 className="mr-3">Taproot</h1>
-                  <div className="inline-block text-xs text-gray-500">(c) 2021 Houjun Liu, Huxley Marvit, Zachary Sayyah, Albert Huang, Dylan Wallace. </div>
+                  <div className="inline-block mb-5 text-xs text-gray-500">(c) 2021 Houjun Liu, Huxley Marvit, Zachary Sayyah, Albert Huang, Dylan Wallace. </div>
                   <br />
 
                   Howdy 👋, welcome to Taproot. Take a look around, either <a href="https://github.com/skoolnotes/taproot" className="text-red-600 underline hover:text-red-400 transition-all">in person</a> or from our handy web portal, which you are currently at.
@@ -34,7 +34,6 @@ export default function Home() {
                   <br />
 
 
-                  <hr />
               </div>
           </div>
 

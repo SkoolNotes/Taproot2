@@ -42,7 +42,7 @@ const PageRenderer = () => {
         //console.log((matter(require(`../../KBBackup3/${course}/${note}.md`).default)).content)
 
         return (<>
-            <span className="sticky top-0 z-40 block p-4 text-xl font-bold text-red-500 bg-gray-100 shadow-lg">Taproot <span style={{float: "right", fontWeight: 500}}>{theFile.data.title}</span></span>
+            <span className="sticky top-0 z-40 flex justify-between block inline-block w-full max-w-full p-4 text-xl font-bold text-red-500 bg-gray-100 shadow-lg nowrap whitespace-nowrap">Taproot <span style={{fontWeight: 500, textOverflow: "ellipsis", whiteSpace: "nowrap", overflow: "hidden", marginLeft: 15}}>{theFile.data.title}</span></span>
             <div className="content max-w-screen-lg">
                 <div className="datarow">
                     <span className="datarow-author">{theFile.data.author ? theFile.data.author : "Taproot"}</span> | <span className="datarow-course"><span className="mr-3">{theFile.data.course}</span><span className="datarow-back"><a href={`./${theFile.data.source}`} className="text-red-500 hover:text-red-800 transition" style={{display: theFile.data.source?"inline":"none"}}>[[{theFile.data.source}]]</a><FontAwesomeIcon icon={faCaretRight} style={{transform: "translateY(2px)", margin: "0 6px", display: theFile.data.source?"inline":"none"}}/><a href={`./${note}`} className="text-red-500 hover:text-red-800 transition">[[{note}]]</a></span></span>
