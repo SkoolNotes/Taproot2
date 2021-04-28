@@ -10,7 +10,7 @@ body {
 
 
 .content {
-    width: min(95vw, 1200px);
+    width: min(90vw, 1200px);
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .datarow-back {
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     font-weight: 400;
     display: inline-block;
 }

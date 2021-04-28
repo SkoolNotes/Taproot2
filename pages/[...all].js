@@ -45,7 +45,7 @@ const PageRenderer = () => {
             <span className="sticky top-0 z-40 block p-4 text-xl font-bold text-red-500 bg-gray-100 shadow-lg">Taproot <span style={{float: "right", fontWeight: 500}}>{theFile.data.title}</span></span>
             <div className="content max-w-screen-lg">
                 <div className="datarow">
-                    <span className="datarow-author">{theFile.data.author ? theFile.data.author : "Taproot"}</span> | <span className="datarow-course">{theFile.data.course}<span className="datarow-back"><a href={`./${theFile.data.source}`} className="text-red-500 hover:text-red-800 transition" style={{display: theFile.data.source?"inline":"none"}}>[[{theFile.data.source}]]</a><FontAwesomeIcon icon={faCaretRight} style={{transform: "translateY(2px)", margin: "0 6px", display: theFile.data.source?"inline":"none"}}/><a href={`./${note}`} className="text-red-500 hover:text-red-800 transition">[[{note}]]</a></span></span>
+                    <span className="datarow-author">{theFile.data.author ? theFile.data.author : "Taproot"}</span> | <span className="datarow-course"><span className="mr-3">{theFile.data.course}</span><span className="datarow-back"><a href={`./${theFile.data.source}`} className="text-red-500 hover:text-red-800 transition" style={{display: theFile.data.source?"inline":"none"}}>[[{theFile.data.source}]]</a><FontAwesomeIcon icon={faCaretRight} style={{transform: "translateY(2px)", margin: "0 6px", display: theFile.data.source?"inline":"none"}}/><a href={`./${note}`} className="text-red-500 hover:text-red-800 transition">[[{note}]]</a></span></span>
                 </div>
                 <ReactMarkdown plugins={[gfm, math]} children={theFile.content} renderers={renderers}/>
             </div>
