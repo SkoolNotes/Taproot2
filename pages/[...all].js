@@ -1,13 +1,12 @@
 import ReactMarkdown from 'react-markdown'
 import 'katex/dist/katex.min.css';
 import { useRouter } from 'next/router'
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
+import { faCaretRight, faSearch, faFilePdf, faHome } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import matter from 'gray-matter';
 import math from 'remark-math'
 
 import TeX from '@matejmazur/react-katex';
-
 
 const gfm = require('remark-gfm')
 
@@ -44,6 +43,11 @@ const PageRenderer = () => {
         return (<>
             <span className="sticky top-0 z-40 flex justify-between block inline-block w-full max-w-full p-4 text-xl font-bold text-red-500 bg-gray-100 shadow-lg nowrap whitespace-nowrap">Taproot <span style={{fontWeight: 500, textOverflow: "ellipsis", whiteSpace: "nowrap", overflow: "hidden", marginLeft: 15}}>{theFile.data.title}</span></span>
             <div className="content max-w-screen-lg">
+                <div className="w-32 actionrow">
+                    <a className="actionrow-button" href={`/`} ><FontAwesomeIcon icon={faHome}/></a>
+                    <a className="actionrow-button" href={`https://github.com/SkoolNotes/Taproot/raw/main/${course}/${note}.pdf`} ><FontAwesomeIcon icon={faFilePdf} /></a>
+                    <FontAwesomeIcon className="actionrow-button" icon={faSearch} />
+                </div>
                 <div className="datarow">
                     <span className="datarow-author">{theFile.data.author ? theFile.data.author : "Taproot"}</span> | <span className="datarow-course"><span className="mr-3">{theFile.data.course}</span><span className="datarow-back"><a href={`./${theFile.data.source}`} className="text-red-500 hover:text-red-800 transition" style={{display: theFile.data.source?"inline":"none"}}>[[{theFile.data.source}]]</a><FontAwesomeIcon icon={faCaretRight} style={{transform: "translateY(2px)", margin: "0 6px", display: theFile.data.source?"inline":"none"}}/><a href={`./${note}`} className="text-red-500 hover:text-red-800 transition">[[{note}]]</a></span></span>
                 </div>

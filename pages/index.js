@@ -16,6 +16,7 @@ export default function Home() {
                   Howdy 👋, welcome to Taproot. Take a look around, either <a href="https://github.com/skoolnotes/taproot" className="text-red-600 underline hover:text-red-400 transition-all">in person</a> or from our handy web portal, which you are currently at.
 
 
+
                   <br />
                   <br />
 

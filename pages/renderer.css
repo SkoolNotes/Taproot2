@@ -15,8 +15,16 @@ body {
     padding-bottom: 50px;
 }
 
-.datarow  {
+.actionrow {
     margin-top: 30px;
+}
+
+.actionrow-button {
+    @apply mr-3 text-sm text-red-500 cursor-pointer hover:text-red-300 transition-all;
+}
+
+.datarow  {
+    margin-top: 5px;
     font-weight: 500;
     color: red;
 }
@@ -96,7 +104,7 @@ hr {
     @apply my-5 border-gray-light 
 }
 
-a :not(wikilink)  {
+a :not(.wikilink)  {
     @apply text-red-600 underline hover:text-red-400 transition-all
 }
 
